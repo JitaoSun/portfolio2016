@@ -1,0 +1,899 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Jitao Sun Design</title>
+
+		<meta name="viewport" content="initial-scale=0.8">
+	    
+	    <link rel="shortcut icon" href="images/favicon.ico">
+
+	    <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+
+	    
+	    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
+	    <link rel="stylesheet" type="text/css" href="css/avenirnext.css">
+	    <link rel="stylesheet" type="text/css" href="css/calluna.css">
+	    <link rel="stylesheet" type="text/css" href="font/hypercubeFont/stylesheet.css">
+
+	    
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	    <script type="text/javascript" src="js/parallax.js"></script>
+	    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+		<script type="text/javascript" src="js/examples.js"></script>
+
+		<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+
+
+<body>
+
+	<div id="about-page">
+		<div id="about-wrap">
+			<!-- <div id="about-image"></div> -->
+			<div id="about-title"></div>
+
+			<div id="about-content">
+				<p id="about-sub-title-zh">关 于 我</p>
+				<p id="about-name-title">Jitao Sun</p>
+				<div id="about-textbody">
+					<p id="about-en">Jitao Sun is an innovative new media designer. He was born in Hangzhou, China. Jitao’s Design is diverse, combining Chinese and Western design culture. He specializes to find a variety of beauty, and put this beauty into his designs. Jitao Sun has good skills in many fields. He had studied architecture and industrial design, specializes in graphic design, photography, motion graphic and digital art.</p>
+					<p id="about-zh">孙吉涛是一个创新的新媒体设计师，杭州人。毕业于美国旧金山艺术大学新媒体系。他的设计是多元化的，结合了东西方文化。他喜欢将两个不同文化下的美运用到其设计中。孙吉涛擅长于各种领域，特别是平面设计，摄影，图形动画，艺术指导和各种数码媒体艺术。他的设计获得过多个奖项，并一直被选入旧金山艺术大学春季展览。</p>
+				</div>
+			</div>
+
+
+			<div id="about-bottom-element">
+				<div id="about-v-line"></div>
+				<p id="about-v-text">1989</p>
+				<p id="about-h-text">02.14</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="contact-page">
+		<div id="contact-wrap">
+
+			<div id="contact-title"></div>
+			
+			<div id="contact-content">
+				<p id="contact-sub-title-zh">联 系 我</p>
+				
+				<?php
+				
+				    mail ( 'tommysun0214@gmail.com', $_POST['email'], $_POST[0], $_POST['message'], $_POST['name'] );
+				
+				?>
+				
+				
+				<form id="contact-mail-form" method="post">
+										
+					<fieldset>
+						<ul>
+							<li id="contact-mail-name">
+								<label for"name">Name</label>
+								<input type="text" name="name"/>
+							</li>
+				
+							<li  id="contact-mail-email">
+								<label for="email">Email</label>
+								<input type="text" name="email">
+							</li>
+				
+							<li id="contact-mail-meassage">
+								<label for="message">Meassage</label>
+								<!-- <textarea name="message" cols="40" rows="15"></textarea> -->
+								<textarea name="message"></textarea>
+							</li>
+				
+						</ul>
+				
+						<div id="contact-mail-send"><input type="submit" name="send" value="Send" /></div>
+						
+					</fieldset>			
+				</form>
+					
+					<div id="contact-bottom-element">
+						<div id="contact-v-line"></div>
+						<p id="contact-v-text">Love</p>
+						<p id="contact-h-text">to hear</p>
+					</div>
+
+				<div id="thanks" >
+					<?php
+				
+					echo "<p><em>{$_POST['name']}</em>, thanks for your message!</p>
+						<p>We will contact you at your email：<em>{$_POST['email']}</em>.</p>";
+				
+					?>
+				</div><!-- close thanks -->				
+				
+				<div id="contact-textbody">
+					<ul id="contact-info">
+						<li>hello@jitaosundesign.com</li>
+						<li>415 992 2120</li>
+						<li id="contact-icons-list">
+							<ul>
+								<li id="vimeo-icon"></li>
+								<li id="behance-icon"></li>
+								<li id="linkin-icon"></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- close to #contact-textbody -->
+
+			</div> <!-- close to #contact-content -->
+
+		</div><!-- close to #contact-warp -->
+	</div><!-- close to #contact-page -->
+
+    <div id="casestudy-wrap">
+
+			<div class="close-casestudy" id="close-white"></div>
+			<div class="close-casestudy" id="close-black"></div>
+
+			<div class="casestudy">
+				<div id="demoreel-casestudy">
+					<div class="casestudy-content">
+						<div id="demoreel-wrap">
+
+							<h1 id="demoreel-title">DEMOREEL 2015</h1>
+
+							<div id="reel-video">
+								<!-- <video controls poster="video/demoreel.jpg"><source src="video/demoreel.mp4" type="video/mp4"></video> -->
+								<div class="js-video vimeo widescreen">
+									<iframe class="casestudy-video" src="https://player.vimeo.com/video/159140627?color=000" width="1280%" height="720%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								</div>
+							</div><!-- close #reel-video -->
+
+							<div  id="reel-video-dscp">
+								<p>This demoreel includes some of my latest motion graphic projects, which is covering futuristic interface design/animation, title sequence, app transition design, prototype, trailer, abstract CG installation, event promo, simple 2D animation and static visual design. All of those projects are student projects that I done during my study at the Academy of Art University, School of Web Design / New meida. 
+								</p>
+								<span>I intend to share all source files of this demoreel as an open source learning material for all kinds non-commercial use. </span>
+							</div><!-- close #reel-video-dscp -->
+
+							<hr />
+
+							<div  id="reel-projects-list">
+								<h2>Project List</h2>
+								<ul>
+									<li>00:00 Intro: D.N.A</li>
+									<li>00:14 Hypercube</li>
+									<li>00:28 Breaking Bad Ttile Sequence</li>
+									<li>00:34 Snap App Design</li>
+									<li>00:38 Ride N Style UI Transition</li>
+									<li>00:40 The Daft Program</li>
+									<li>00:48 Violin Making Book Trailer</li>
+									<li>00:55 Shape to Music</li>
+									<li>00:58 App Promo</li>
+									<li>01:00 Mapping Festival Promo</li>
+									<li>01:09 Everyday Visual Design &amp; 3D Imaging</li>
+								</ul>
+							</div><!-- close #reel-projects-list -->
+
+							<div id="reel-breakdown-th" class="row">
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well reel-project" id="reel-project-1"><div class="reel-project-title">D . N . A .</div><img src="images/casestudy/demoreel/00.png" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well reel-project" id="reel-project-2"><div class="reel-project-title">Hypercube</div><img src="images/casestudy/demoreel/01.png" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well reel-project" id="reel-project-3"><div class="reel-project-title">Breaking Bad Ttile Sequence</div><img src="images/casestudy/demoreel/02.png" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well reel-project" id="reel-project-4"><div class="reel-project-title">Snap App Design</div><img src="images/casestudy/demoreel/03.png" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well reel-project" id="reel-project-5"><div class="reel-project-title">Ride N Style UI Transition</div><img src="images/casestudy/demoreel/04.png" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well reel-project" id="reel-project-6"><div class="reel-project-title">The Daft Program</div><img src="images/casestudy/demoreel/05.png" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well reel-project" id="reel-project-7"><div class="reel-project-title">Violin Making Book Trailer</div><img src="images/casestudy/demoreel/06.png" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well reel-project" id="reel-project-8"><div class="reel-project-title">Shape to Music</div><img src="images/casestudy/demoreel/07.png" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well reel-project" id="reel-project-9"><div class="reel-project-title">App Promo</div><img src="images/casestudy/demoreel/08.png" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well reel-project" id="reel-project-10"><div class="reel-project-title">Mapping Festival Promo</div><img src="images/casestudy/demoreel/09.png" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well reel-project" id="reel-project-11"><div class="reel-project-title">Game: Undersea Expedition</div><img src="images/casestudy/demoreel/10.png" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well reel-project" id="reel-project-12"><div class="reel-project-title">Modeling: Daft Punk</div><img src="images/casestudy/demoreel/11.jpg" alt=""></div>
+							</div><!-- close #reel-breakdown-th .row -->
+
+							<div id="reel-text-animation">
+								<h2>Text Animation</h2> 
+								<p>I cut the type of the title and my name in pieces, in order to add more sense of space and movement to the letters. Then I animated them in Adobe After Effects. The typeface I use is Avenir Next Demi Bold.</p>
+								<div class="animation-gif-box">
+									<div id="title-animation">
+										<img src="images/casestudy/demoreel/titleAnimation.gif" alt="">
+									</div>
+								</div>
+								
+								<p>Demoreel Title Animation</p>
+
+								<div class="animation-gif-box">
+									<div id="name-animation">
+										<img src="images/casestudy/demoreel/nameAnimation.gif" alt="">
+									</div>
+								</div>
+								<p>My Name Animation</p>
+							</div><!-- close #reel-text-animation -->
+
+							<div id="reel-download">
+								<h2>Open Source Files</h2>
+								<p>It is my intent that you use these files as a learning resource. You are free to use the project files in your personal or commercial projects, but please do not resell, repackage, redistribute, repurpose, or break apart this package in any way. If you use the files, please credit or provide a link to www.jitaosundesign.com in some way. When in doubt, email hello@jitaosundesign.com. All rights reserved.</p>
+								
+								<div id="reel-button-set">
+									<div class="reel-download-button">Download Source Files</div>
+									<div class="reel-download-button">Read Instruction Document</div>
+								</div>
+
+								<p>* Before you download the files, please read the Instruction document.</p>
+							</div><!-- close #reel-download -->
+	
+						</div><!-- close #demoreel-wrap-->
+					</div>
+				</div>
+
+				<div id="dna-casestudy">
+					<div id="stars"></div>
+					<div id="stars2"></div>
+					<div id="stars3"></div>
+					<div id="stars4"></div>
+					<div class="casestudy-content" >
+
+						<div id="dna-wrap">
+
+							<div id="dna-video-wrap">
+								<video controls><source src="video/DNA.mp4" type="video/mp4"></video>
+							</div>
+							
+							<div class="scroll-line"></div>
+							
+							<p class="scroll-text"> scroll </p>
+							
+							<!-- <div class="dna-line"></div> -->
+							
+							<div class="dna-case-icon"></div>
+							
+							<h1 class="case-title">D. N. A</h1>
+							
+							<div class="dna-line"></div>
+							
+							<p class="dna-textbody">This project focused on Art Direction, CG modeling and the scene design, Inspired by Beeple’s short film “Zero Day.” I spent about 2 weeks to complete a full process includes scene design, modeling, texturing, lighting and animation in MAXON’s Cinema 4D. Then creating the pre-rendered VR content, which can be distributed via YouTube VR or Facebook and viewed with a smartphone and Google Cardboard headset.</p>
+							
+							<div class="dna-line"></div>
+							
+							<div id="dna-quote"> </div>
+							
+							<div class="dna-line"></div>
+							
+							<h2 class="case-sub-title">Why?</h2>
+							
+							<p class="dna-textbody">D.N.A means Design and Art. It also means Design and Art filled in my DNA. I LOVE DESIGN and ART. </p>
+							
+							<div id="dna-and-icon"></div>
+							
+							<p class="dna-textbody">I really like the futuristic things. In my eyes, something that is futuristic, also gose very psychedelic. So here why I made this project. I created this futuristic lab with the glassy looking DNA and my LOGO installation just because I LOVE IT! Yeah, “Love” is always the best reason to make things.</p>
+														
+							<div class="dna-line"></div>
+							
+							<h2 class="case-sub-title">Modeling</h2>
+
+							<div id="dna-modeling">
+								<img src="images/casestudy/dna/modeling.png" alt="">
+							</div><!-- close #dna-modeling .row -->
+							
+							<div class="dna-line"></div>
+							
+							<h2 class="case-sub-title">Rander &amp; Color Correction</h2>
+
+							<div id="dna-comps"><img src="images/casestudy/dna/comps.jpg" alt=""></div>		
+
+							<p class="dna-textbody">I use the physical render engine in C4D without any render plugin or third-party render engine (which is painful, but proud.) Then I composite and color correcte with Adobe After Effect.</p>	
+							
+							<div id="dna-comps"><img src="images/casestudy/dna/renders.png" alt=""></div>			
+
+							<div class="dna-line"></div>
+											
+							<h2 class="case-sub-title">Virtual Reality Experience</h2>
+							
+							<div id="vr-icon"></div>
+							
+							
+							<div id="vr-video">
+								<div class="js-video widescreen">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/SF6kuEaUtz0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+
+							<p class="dna-textbody">Highly recommended to view in the highest resolution using your smartphone device and Google Cardboard or any other VR headset. The 2D image will not look as sharp without the headset. </p>
+
+							<div class="just-space"></div>
+
+						</div><!-- close #dna-warp -->
+					</div><!-- close .casestudy-content -->
+				</div>
+
+				<div id="hypercube-casestudy">
+					<div class="casestudy-content">
+						<div id="hypercube-wrap">
+
+							<div id="hypercube-casestudy-icon"><img src="images/casestudy/hypercube/logo.png" alt=""></div>
+							
+							<div class="hypercube-line"></div>
+
+							<div id="hypercube-about">
+								<p>Hypercube is an interface/System for rally racing car, It is designed for improving the driving experience. This system can interact and analyze the outside environment, help drivers master the surrounding environment information. In addition, the system also monitors the vehicle itself, intelligent alerts and reporting necessary information.</p>
+							</div>
+
+							<div class="hypercube-line"></div>
+
+							<h2 class="set-center">UI ANIMATION REEL</h2>
+							
+							<div id="hypercube-video"><video controls poster="video/carUIreel.jpg"><source src="video/carUIreel.mp4" type="video/mp4"></video></div>
+							
+							<div class="hypercube-line"></div>
+
+							<h2 class="set-center">Design Guide</h2>
+							<div id="hypercube-design-guide"><img src="images/casestudy/hypercube/design-guide.png" alt=""></div>
+							<p>* The primary typeface <span>HYPERCUBE</span> is my own design typeface. </p>
+							
+							<div class="hypercube-line"></div>
+
+							
+							<div class="row with-gutters">
+								<div class="col-xs-12 col-md-12 col-lg-8 col-xl-8">
+									<div id="hypercube-architecture"><img src="images/casestudy/hypercube/architecture.png" alt=""></div>
+								</div>
+								<div class="col-xs-12 col-md-12 col-lg-4 col-xl-4">
+									<h2 class="inner-title">Architecture</h2>
+									<p>This interface/system has two parts, the HUD console and the Vehicle Info console. The HUD consoles will be displayed on the windscreen. It can analyze and remind drivers about the environment. The Vehicle Info console will be displayed on a big touch screen. It shows all the information about the vehicle, helps the navigator get the real-time vehicle information and quickly revise the strategy.</p>
+								</div>
+							</div><!-- close .row -->
+
+							<div class="hypercube-line"></div>
+
+							<h2 class="set-center">HUD Display</h2>
+							<div id="hypercube-window-display"><img src="images/casestudy/hypercube/window-display.png" alt=""></div>
+							<p id="hud-text">There are not too many elements on the HUD screen, in order to allow the driver to concentrate on driving. All the information on the HUD only assists the driver better understand the road conditions, improve the driving experience.</p>
+							
+							<div class="hypercube-line"></div>
+
+							<h2 class="set-center" >Fluid Layout</h2>
+							<div id="hypercube-ui-layout"><img src="images/casestudy/hypercube/layout.png" alt=""></div>
+							<p id="layout-text">The main content area is a large 3D working space. User can use simple gestures to change the camera angle and perspective. For example, in the initial screen, the main area displays the entire car models. When the operator opens with two fingers to zoom the camera, the shell will gradually expand outward and become more transparent. Meanwhile, the data displayed on the panels also change from the entire car overview data to detail parameters of a single or multi component (base on which object is selected or in focus).</p>
+							
+							<div id="hypercube-ui-layout2"><img src="images/casestudy/hypercube/layout2.png" alt=""></div>
+							<div class="row">
+								<div id="layout2-text-left" class="col-xs-12 col-md-8 col-lg-8 col-xl-8">
+									<p>All interfaces are fluid. The General panel's layout, scale and contents can be changed according to the central display. As shown above, because the main display area shows the track and environmental information, the originally secondary display area on the below expend upwards to show more information that related to the main display, in order to support user to grasp more detailed data and analysis.</p>
+								</div>
+								<div id="layout2-text-right" class="col-xs-12 col-md-4 col-lg-4 col-xl-4">
+									<p>In this interface design, all the info and data are the real content. I do not only design complex looking, but also the usability and applicability. I try to make every part of this interface logical and usable. </p>
+								</div>
+							</div><!-- close .row -->
+
+							<div class="hypercube-line"></div>
+
+							<h2 class="set-center">Tags</h2>
+							<div id="hypercube-tag"><img src="images/casestudy/hypercube/tag.png" alt=""></div>
+							<p class="tag-text">Tag is a major element in this system. Almost all of the operations and data connections work with tag. The principle is very simple, the user selects the object first, then open/connect with a tag, then it will extend more information or operate consoles. </p>
+							<p class="tag-text">Color is another major element, It is not only used to distinguish different selection, different flow, but also shows the data conversion. This makes the operation of the entire interface to become more intuitive and easy to understand.</p>
+							
+
+							<div class="just-space"></div>
+
+
+							<video controls poster="video/transition.jpg"><source src="video/transition.mp4" type="video/mp4"></video>
+							<div class="row with-gutters">
+								<div class="col-xs-12 col-md-6 col-lg-6 col-xl-6">
+									<div id="hypercube-tag2"><img src="images/casestudy/hypercube/tag2.png" alt=""></div>	
+								</div>
+								<div class="col-xs-12 col-md-6 col-lg-6 col-xl-6">
+									<h2 class="inner-title">Display Layer</h2>
+									<p>As shown left, there are three display layers. This is not a physical level division, but a principle and visual division. All the selected objects or top level messages such as warning display on the top level. All the body content such as data, tags, panels will display on the main level. All the transition will be on the transform level.</p>
+								</div>
+							</div><!-- close .row -->
+
+							<div class="just-space"></div>
+
+						</div><!-- close #hypercube-wrap -->
+					</div><!-- close #casestudy-conte -->
+				</div>
+
+				<div id="snap-casestudy">
+					<section id="snap-first" data-speed="8" data-type="background">
+						<div class="casestudy-content">
+							<div class="snap-wrap">
+								<div id="snap-logo" data-speed="-6"><img src="images/casestudy/snap/logo.png" alt=""></div>
+								<!-- <div id="snap-intro">I AM NOT <br>"ANOTHER"<br>PARKING APP. <br>I AM SNAP.</div> -->
+							</div><!-- close .snap-wrap -->
+						</div><!-- close .casestudy-content -->
+					</section>
+
+					<section id="snap-second" data-speed="0" data-type="background">
+						<div class="casestudy-content">
+							<div class="snap-wrap">
+								<div class="snap-brif">Snap is a beautiful, unique app that helps people happy and easy to complete the last step of their driving. It is completely different from all of other parking app and the most important is,  Snap better than them.</div>
+							</div><!-- close .snap-wrap -->
+						</div><!-- close .casestudy-content -->
+					</section>
+
+					<section id="snap-third" data-speed="8" data-type="background">
+						<div class="casestudy-content">
+							<div class="snap-wrap">
+								<div id="snap-userflow"><img src="images/casestudy/snap/research.png" alt=""></div>
+							</div><!-- close .snap-wrap -->
+						</div><!-- close .casestudy-content -->
+					</section>
+
+					<section id="snap-fourth" data-speed="6" data-type="background">
+						<div class="casestudy-content">
+							<div class="snap-wrap">
+								<div class="js-video vimeo widescreen" id="snap-video-wrap"><iframe src="https://player.vimeo.com/video/159142430?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+							</div><!-- close .snap-wrap -->
+						</div><!-- close .casestudy-content -->
+					</section>
+
+					<section id="snap-fifth" data-speed="8" data-type="background">
+						<div class="casestudy-content" >
+							<div class="snap-wrap">
+								<h2>DESIGN GUIDE</h2>
+								<div id="snap-color"><img src="images/casestudy/snap/color.png" alt=""></div>
+								<div id="snap-typeface"><img src="images/casestudy/snap/typeface.png" alt=""></div>
+							</div><!-- close .snap-wrap -->
+						</div><!-- close .casestudy-content -->
+					</section>
+
+					<section id="snap-sixth" data-speed="6" data-type="background">
+						<div class="casestudy-content">
+							<div class="snap-wrap">
+								<div id="snap-design1-animation1"><img src="images/casestudy/snap/snap-animation2.gif" alt=""></div>
+								<div id="snap-design1-animation2"><img src="images/casestudy/snap/snap-animation1.gif" alt=""></div>
+								<div id="snap-design1"><img src="images/casestudy/snap/design1.png" alt=""></div>
+							</div><!-- close .snap-wrap -->
+						</div><!-- close .casestudy-content -->
+					</section>
+
+					<section id="snap-seventh" data-speed="8" data-type="background">
+						<div class="casestudy-content" >
+							<div class="snap-wrap">
+								<div class="snap-brif">Snap uses simple, understandable icons and beautiful conspicuous typography to present an intuitive user interface. It makes the users easy to read and think, and fully concentrate on their driving, in order to create a safe and comfortable operating environment.</div>
+							</div><!-- close .snap-wrap -->
+						</div><!-- close .casestudy-content -->
+					</section>
+
+					<section id="snap-eighth" data-speed="6" data-type="background">
+						<div class="casestudy-content">
+							<div class="snap-wrap">
+								<div id="snap-design2"><img src="images/casestudy/snap/design2.png" alt=""></div>
+							</div><!-- close .snap-wrap -->
+						</div><!-- close .casestudy-content -->
+					</section>
+
+					<section id="snap-ninth" data-speed="0" data-type="background">
+						<div class="casestudy-content">
+							<div class="snap-wrap">
+								<div class="snap-brif">Snap has a lot natural transition animation and gorgeous, prominent colors. All of these can help user to easily remember the interface and user flow, operating without extra thinking.</div>
+							</div><!-- close .snap-wrap -->
+						</div><!-- close .casestudy-content -->
+					</section>
+
+					<section id="snap-end">
+						<div class="casestudy-content">
+							<div class="snap-wrap">
+								<div id="snap-animation">
+									<h2>App Transition</h2>
+									<video autoplay loop><source src="images/casestudy/snap/animation01.mp4" type="video/mp4"></video>
+									<video autoplay loop><source src="images/casestudy/snap/animation02.mp4" type="video/mp4"></video>
+									<video autoplay loop><source src="images/casestudy/snap/animation03.mp4" type="video/mp4"></video>
+								</div><!-- close #snap=animation -->
+							</div><!-- close .snap-wrap -->
+						</div><!-- close .casestudy-content -->
+					</section>
+				</div>
+
+				<div id="code-casestudy">
+					<div class="casestudy-content">
+						<div id="code-wrap">
+
+							<h2>The Ideate Conference Poster</h2>
+							<div id="ideate" class="row">
+								<div class="col-xs-12 col-md-4 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/code/01.png" alt=""></div>
+								<div class="col-xs-12 col-md-4 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/code/02.png" alt=""></div>
+								<div class="col-xs-12 col-md-4 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/code/03.png" alt=""></div>
+							</div><!-- close #poster-design .row -->
+							<p>I design those posters for the Ideate Conference in 2016 Spring, which is the most important event of the School of Web Design + New Meida, Academy of Art University. The Ideate Conference brings together Academy students, industry leaders, and Alumni for a day of education, networking and celebration. The goal is to showcase the amazing students to industry from top companies (such as Google, PayPal, and Eventbrite).<span>more about this event</span></p>
+							<p>I wrote a small program with <span>p5.js</span> to generate the poster background and mess around in Adobe Photoshop. The main concept behind it is think, do and cooperation. I believe that every student is a unique indispensable element in this huge, bright, colorfull "web new meida art world".</p>
+							<div class="code-casestudy-link-button"><p>See the Code</p></div>
+							
+							
+							<h2>jitaosundesign.com</h2>
+							<div id="p-site" class="row"><img src="images/casestudy/code/00.png" alt=""></div>
+							<p>Yes, I code my site. I spent around a month to complete this site. From design to assets to code, all by my own. </p>
+
+							<div class="just-space"></div>
+							<div class="just-space"></div>
+						</div><!-- close #code-warp -->
+					</div>
+				</div>
+
+				<div id="rns-casestudy">
+					<div class="casestudy-content">
+						<div id="rns-wrap">
+							<p>Collaborative project with <span>Jeff Heppert</span> and <span>Injun Kim</span>. Rebranded a freestyle bicycle competition. Projection mapping was used to enhance the viewing experience, as well as bring fans together with collaborative art competitions. I'm responsible for Art Direction, Overall Visual Design, Animations and 3D modeling. Also did part of webiste, watch and mobel app design.</p>
+
+							<h2>Logo Design</h2>
+							<div id="rns-logo-design"><img src="images/casestudy/rns/logo-design.png" alt=""></div>
+
+							<h2>Mobel App Design Guide</h2>
+							<div id="rns-app-design-guide"><img src="images/casestudy/rns/app-design.png" alt=""></div>
+
+							<div id="rns-app" class="row with-gutters">
+								<div class="col-xs-12 col-md-4 col-lg-5 col-xl-6"><video loop autoplay src="images/casestudy/rns/app.mp4"></video></div>
+								<div class="col-xs-12 col-md-8 col-lg-7 col-xl-6 rns-text" >
+									<h2>Mobel App Design</h2>
+									<p>There are three different use cases: General viewe, Media team and the Riders (which is the race participant). The example there is the Riders case.</p>
+									<p>After sign in, is the Ticket/Pass page. On the top, there is a menu that allows users to quickly navigate to other pages/functions. </p>
+									<p>The main fountions are on the same hierarchy level. so users can also swipe to change pages.</p>
+									<p>Ghost race can help riders to compare their times with other racers. Lineup page shows where the rider is in to overall lineup. My Team page will show ride's team members, their events, and their ranking.</p>
+									<p>Users can always click on the logo to go quickly to their Ticket/Pass page.</p>
+								</div>
+							</div>
+
+
+							<h2>Watch App Design Guide</h2>
+							<div id="rns-watch-design-guide"><img src="images/casestudy/rns/watch-design.png" alt=""></div>
+
+							
+							<div id="rns-watch-app" class="row with-gutters">
+								<div class="col-xs-12 col-md-4 col-lg-5 col-xl-6"><video loop autoplay src="images/casestudy/rns/watch.mp4"></video></div>
+								<div class="col-xs-12 col-md-8 col-lg-7 col-xl-6 rns-text">
+									<h2>Watch App Design</h2>
+									<p>The Watch App is only used for the team and riders. The founction of this app is very simple, only shows inforamtion and notifications to the riders. The Reb Bull sponsors will use it to track the rider's infomation such as physical health data, and also it can records all the data for tracking the rider's paths and use to the projection mapping replays.</p>
+								</div>
+							</div>
+
+							<h2>Web Design Guide</h2>
+							<div id="rns-web-design-guide"><img src="images/casestudy/rns/web-design.png" alt=""></div>
+							
+							<div id="rns-web" class="row with-gutters">
+								<div class="col-xs-12 col-md-6 col-lg-6 col-xl-6"><img src="images/casestudy/rns/web01.png" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-6 col-xl-6 rns-text" >
+									<h2>Web Design</h2>
+									<p>The Watch App is only used for the team and riders. The founction of this app is very simple, only shows inforamtion and notifications to the riders. The Reb Bull sponsors will use it to track the rider's infomation such as physical health data, and also it can records all the data for tracking the rider's paths and use to the projection mapping replays.</p>
+								</div>
+							</div>
+
+							<div class="just-space"></div>
+							<div class="just-space"></div>
+
+
+
+						</div><!-- close #rns-wrap -->
+					</div>
+				</div>
+
+				<div id="gallery">
+					<div class="casestudy-content">
+						<div id="gallery-wrap">
+							<h2>Hypercube Typeface</h2>
+							<div id="hypecube-typeface" class="row with-gutters">
+								<div class="col-xs-12 col-md-6 col-lg-6 col-xl-6 well gallery-project"><img src="images/casestudy/posters/00.png" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-6 col-xl-6 well gallery-project"><img src="images/casestudy/posters/01.png" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-6 col-xl-6 well gallery-project"><img src="images/casestudy/posters/02.png" alt=""></div>
+								<!-- <div class="col-xs-12 col-md-6 col-lg-6 col-xl-6 well gallery-link-button"><p>More about this typeface</p></div> -->
+							</div><!-- close #hypecube-typeface .row with-gutters -->
+							<div class="gallery-link-button"><p>More about this typeface</p></div>
+
+							<h2>"Everyday" Digital Art</h2> 
+							<div id="everyday" class="row hover-effect">
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/everyday/00.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/everyday/01.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/everyday/02.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/everyday/03.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/everyday/04.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/everyday/05.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/everyday/06.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/everyday/07.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/everyday/08.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/everyday/09.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/everyday/10.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/everyday/11.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/everyday/12.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/everyday/13.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/everyday/14.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/everyday/15.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/everyday/16.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/everyday/17.jpg" alt=""></div>
+							</div><!-- close #everyday .row -->
+
+							<h2>3D Imaging</h2> 
+							<div id="3D-imaging" class="row hover-effect">
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/3dimaging/00.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/3dimaging/01.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/3dimaging/02.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/3dimaging/03.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/3dimaging/04.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/3dimaging/05.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/3dimaging/06.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/3dimaging/07.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/3dimaging/08.jpg" alt=""></div>
+							</div><!-- close #3D-imaging .row -->
+
+							<h2>Poster Design</h2>
+							<div id="poster-design" class="row">
+								<div class="col-xs-12 col-md-4 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/posters/03.png" alt=""></div>
+								<div class="col-xs-12 col-md-4 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/posters/04.png" alt=""></div>
+								<div class="col-xs-12 col-md-4 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/posters/05.png" alt=""></div>
+							</div><!-- close #poster-design .row -->
+
+							<h2>Haagen Dazs Poster</h2>
+							<div id="haagen-dazs" class="row">
+								<div class="col-xs-12 col-md-4 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/posters/06.png" alt=""></div>
+								<div class="col-xs-12 col-md-4 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/posters/07.png" alt=""></div>
+								<div class="col-xs-12 col-md-4 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/posters/08.png" alt=""></div>
+							</div><!-- close #poster-design .row -->
+
+							<h2>Photography</h2> 
+							<div id="photography" class="row hover-effect">
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/photography/00.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/photography/01.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/photography/02.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/photography/03.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/photography/04.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/photography/05.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/photography/06.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/photography/07.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/photography/08.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/photography/09.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/photography/10.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/photography/11.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/photography/v01.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/photography/v02.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/photography/v03.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/photography/v04.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/photography/v05.jpg" alt=""></div>
+								<div class="col-xs-12 col-md-6 col-lg-4 col-xl-4 well gallery-project"><img src="images/casestudy/photography/v06.jpg" alt=""></div>
+							</div><!-- close #photography .row -->
+
+							<div class="just-space"></div>
+						</div><!-- close #demoreel-wrap-->
+					</div>
+				</div>
+
+			</div><!-- close .casestudy -->
+
+	</div><!-- close #casestudy-wrap -->
+
+
+	<div id="wrapper">
+    	<header id="main-header">
+			
+			<div class="about-close"></div>
+
+        	<nav id="top-nav">
+        		<ul>
+        			<li id="about">
+        				<div class="top-nav-line"></div>
+        				<a>
+	        				<div class="top-nav-link" >
+	        				About
+	        				</div>
+        				</a>
+        			</li>
+        			<li id="contact">
+        				<div class="top-nav-line"></div>
+        				<a>
+	        				<div class="top-nav-link" >
+	        				Contact
+	        				</div>
+        				</a>
+        			</li>
+        		</ul>
+        	</nav>
+
+        	<a href="#firstPage">
+        		<div class="logo"></div>
+        	</a>
+
+        	<div class="scroll-up"></div>
+        </header>
+        
+       	<div class="enter" id="breakdown-link">
+	        <div class="enter-left-line"></div>
+	        <div class="enter-link">BREAKDOWN &gt;</div>
+	        <div class="enter-right-line"></div>
+	    </div>
+
+	    <div class="enter" id="casestudy-link">
+	        <div class="enter-left-line"></div>
+	        <div class="enter-link">CASESTUDY &gt;</div>
+	        <div class="enter-right-line"></div>
+	    </div>
+
+	    <div class="enter" id="viewgallery-link">
+	        <div class="enter-left-line"></div>
+	        <div class="enter-link">VIEW &gt;</div>
+	        <div class="enter-right-line"></div>
+	    </div>
+
+    	
+        <div id="side-bar">
+	        <div id="side-bg">
+	        	<div id="side-download">
+	            	<ul>
+	                    <a href="http://jitaosundesign.com/download/JitaoSun_Resume.pdf" target="_blank"><li id="download-resume">
+	                    <div class="side-download-title">RESUMÉ</div>
+	                    <div class="download-icon"></div>
+	                    </li></a>
+	                    
+	                    <a href="http://jitaosundesign.com/download/portfolio.pdf" target="_blank"><li id="download-pdf">
+	                    <div class="side-download-title">PDF Portfolio</div>
+	                    <div class="download-icon"></div>
+	                    </li></a>
+	                </ul>
+	            </div> <!-- close #side-download -->
+	        </div><!-- close #side-bg -->
+            <div id="nav-graphic">
+            	<div class="menu-bar bar1"></div>
+                <div class="menu-bar bar2"></div>
+                <div class="menu-bar bar3"></div>
+            </div>
+            <nav>
+                <ul id="main-menu">
+                    <a href="#firstPage"><li data-menuanchor="firstPage" id="one" class="main-nav-link">
+                    <div class="nav-numb">00</div>
+                    <div class="title">Demo Reel</div>
+                    <div class="line line-now"></div>
+                    </li></a>
+                    
+                    <a href="#secondPage"><li data-menuanchor="secondPage" id="two" class="main-nav-link">
+                    <div class="nav-numb">01</div>
+                    <div class="title">D.N.A</div>
+                    <div class="line"></div>
+                    </li></a>
+                    
+                    <a href="#3rdPage"><li data-menuanchor="3rdPage" id="three" class="main-nav-link">
+                    <div class="nav-numb">02</div>
+                    <div class="title">Hypercube</div>
+                    <div class="line"></div>
+                    </li></a>
+                    
+                    <a href="#4thpage"><li data-menuanchor="4thpage" id="four" class="main-nav-link">
+                    <div class="nav-numb">03</div>
+                    <div class="title">Snap</div>
+                    <div class="line"></div>
+                    </li></a>
+                    
+                    <a href="#5thpage"><li data-menuanchor="5thpage" id="five" class="main-nav-link">
+                    <div class="nav-numb">04</div>
+                    <div class="title">Code</div>
+                    <div class="line"></div>
+                    </li></a>
+                    
+                    <a href="#6thpage"><li data-menuanchor="6thpage" id="six" class="main-nav-link">
+                    <div class="nav-numb">05</div>
+                    <div class="title">Ride N Style</div>
+                    <div class="line"></div>
+                    </li></a>
+                    
+                    <a href="#lastPage"><li data-menuanchor="7thpage" id="seven" class="main-nav-link">
+                    <div class="nav-numb">06</div>
+                    <div class="title">Gallery</div>
+                    <div class="line"></div>
+                    </li></a>
+                    
+                </ul>
+            </nav>
+        </div><!-- clsoe #side-bar" -->
+
+        <div id="close-home-reel"></div>
+
+		<div id="home-reel">
+			<div class="js-video vimeo widescreen">
+				<iframe id="home-reel-video-frame" src="https://player.vimeo.com/video/159140627?&color=ffffff&byline=0&portrait=0" width="1280px" height="720px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+		</div>
+
+        <div id="fullpage">
+ 
+            <div class="section" id="section0">
+
+	            <!-- <video autoplay loop poster="video/bgvideo.jpg" id="bgvid">
+	            	<source src="video/bgvideo-1.webm" type="video/webm">
+	            	<source src="video/bgvideo-1.mp4" type="video/mp4">
+	            </video> -->
+
+            	<div class="inner-block">
+
+	            	<div class="project-icon" id="demoreel-icon"></div>
+	                <h1>DEMOREEL</h1>
+	                <div class="dividing-line"></div>
+	                <h2>2015</h2>
+
+	                <div class="enter">
+	                	<div class="enter-left-line"></div>
+	                	<div class="enter-link">BREAKDOWN &gt;</div>
+	                	<div class="enter-right-line"></div>
+	                </div>
+            	</div><!-- close .inner-block -->
+            </div><!-- close #section0 -->
+            
+            <div class="section" id="section1">
+            	<div class="inner-block">
+
+	            	<div class="project-icon" id="dna-icon"></div>
+	                <h1>D. N. A</h1>
+	                <div class="dividing-line"></div>
+	                <h2>3D MOTION &amp; VR</h2>
+
+            	</div><!-- close .inner-block -->
+            </div><!-- close #section1 -->
+    
+            <div class="section" id="section2">
+            	<div class="inner-block">
+
+	            	<div class="project-icon" id="hypercube-icon"></div>
+	                <h1>HYPERCUBE</h1>
+	                <div class="dividing-line"></div>
+	                <h2>FUTURISTIC CAR UI</h2>
+
+            	</div><!-- close .inner-block -->
+            </div><!-- close #section2 -->
+    
+            <div class="section" id="section3">
+            	<div class="inner-block">
+
+	            	<div class="project-icon" id="snap-icon"></div>
+	                <h1>SNAP</h1>
+	                <div class="dividing-line"></div>
+	                <h2>NOT “ANOTHER” PARKING APP</h2>
+
+            	</div><!-- close .inner-block -->
+            </div><!-- close #section3 -->
+        
+            <div class="section" id="section4">
+            	<div class="inner-block">
+
+	            	<div class="project-icon" id="code-icon"></div>
+	                <h1>CODE</h1>
+	                <div class="dividing-line"></div>
+	                <h2>GENERATIVE ART &amp; CODE</h2>
+
+            	</div><!-- close .inner-block -->
+            </div><!-- close #section4 -->
+            
+            
+        
+            <div class="section" id="section5">
+            	<div class="inner-block">
+
+	            	<div class="project-icon" id="rns-icon"></div>
+	                <h1>RIDE &amp; STYLE</h1>
+	                <div class="dividing-line"></div>
+	                <h2>VISUAL DESIGN &amp; INTERACTIVE</h2>
+
+            	</div><!-- close .inner-block -->
+            </div><!-- close #section5 -->
+            
+            
+                    
+            <div class="section" id="section6">
+            	<div class="inner-block">
+
+	            	<div class="project-icon" id="gallery-icon"></div>
+	                <h1>GALLERY</h1>
+	                <div class="dividing-line"></div>
+	                <h2>PRINT, PHOTOGRAPHY, IMAGING</h2>
+
+            	</div><!-- close .inner-block -->
+            </div><!-- close #section6 -->
+        
+            
+            
+            
+            
+        </div><!-- close #fullpage -->
+
+
+    </div><!-- close #wrapper -->
+
+
+
+
+</body>
+</html>

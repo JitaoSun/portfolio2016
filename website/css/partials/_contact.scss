@@ -1,0 +1,395 @@
+
+#contact-page{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	background: $color-black;
+	color: $color-main;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	opacity:0;
+	display:none;
+	@media #{$screen-tablet}{
+		height: auto;
+		overflow-y: scroll;
+	}
+	@media #{$screen-phone}{
+		height: auto;
+		overflow-y: scroll;
+	}
+
+}
+
+#contact-wrap{
+	position:absolute;
+	top:22vh;
+	left:16.4vw;
+	padding-left: 135px;
+	width:60.3075vw;
+	@media #{$screen-tablet}{
+		top:95px;;
+		padding-left: 92px;
+		padding-right: 92px;
+		width: 100%;
+		left:0;
+		right:0;
+	}
+	@media #{$screen-phone}{
+		top:95px;;
+		padding-left: 92px;
+		padding-right: 92px;
+		width: 100%;
+		left:0;
+		right:0;
+	}
+}
+
+#contact-title{
+	opacity:0;
+	width: 26.35vw;
+	height: 3.85vw;
+	background:url(../images/contact/contact-title.png) no-repeat ;
+	background-size: cover;
+	margin-right: 0;
+	margin-left: auto;
+}
+
+#contact-sub-title-zh{
+	position: absolute;
+	left: auto;
+	right: 0;
+    opacity:0;
+	margin-left: auto;
+	text-align: right;
+	font-family:$chinese-font !important; 
+	font-size:16px;
+	line-height: 2.6;
+	opacity:0.8;
+	display:inline-block;
+	@media #{$screen-tablet}{
+		display: none;
+	}
+	@media #{$screen-phone}{
+		display: none;
+	}
+}
+
+form#contact-mail-form{
+	position: absolute;
+	font-family: $font-header !important;
+	letter-spacing:0.1em !important;
+	width: 28vw;
+	max-width:498px;
+	@media #{$screen-tablet}{
+		width: 100%;
+		position:relative;
+		max-width: 850px;
+	}
+	@media #{$screen-phone}{
+		width: 100%;
+		position:relative;
+		max-width: 850px;
+	}
+}
+
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+#thanks{
+	display:none;
+}
+
+#contact-mail-textbody{
+    opacity:0;
+	position: relative;
+	width: 100%;
+	font-size: 18px;
+	text-align: justify;
+	line-height: 1.5;
+	@media #{$screen-tablet}{
+		font-size:12px;
+	}
+	@media #{$screen-phone}{
+		font-size:12px;
+	}
+}
+
+
+
+#contact-mail-form ul li{
+	opacity:0;
+	position: relative;
+	width: 100%;
+	height: 29px;
+	border-bottom: $color-main 2px solid;
+	margin-bottom: 30px;
+	@media #{$screen-tablet}{
+		font-size:12px;
+		height: 22px;
+	}
+	@media #{$screen-phone}{
+		font-size:12px;
+		height: 22px;
+	}
+}
+
+#contact-mail-meassage label{
+	float:left;
+}
+
+#contact-mail-send{
+	opacity:0;
+	margin-top: 21vh;
+	@media #{$screen-tablet}{
+		margin-top: 17vh;
+	}
+	@media #{$screen-phone}{
+		margin-top: 17vh;
+	}
+
+}
+
+input{
+	border:none;
+	background: none;
+	color: $color-main;
+	margin-left: 10px;
+	font-family: $font-header !important;
+	letter-spacing:0.1em !important;
+	font-size:14px;
+	@media #{$screen-tablet}{
+		font-size:12px;
+	}
+	@media #{$screen-phone}{
+		font-size:12px;
+	}
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input[type=submit]{
+	font-family: $font-header !important;
+	letter-spacing:0.1em !important;
+	font-size:14px;
+	width: 100px;
+	height: 43px;
+	margin-left: -30px;
+	text-align: center;
+	border: $color-main 2px solid;
+	padding-top: 6px;
+	cursor: pointer;
+	color: $color-main;
+	background: none;
+	&:hover{
+		border:none;
+		background:  $color-main;
+		color: $color-black;
+	}
+	@media #{$screen-tablet}{
+		font-size:12px;
+	}
+	@media #{$screen-phone}{
+		font-size:12px;
+	}
+}
+
+
+textarea{
+	position:absolute;
+	left:0;
+	right:auto;
+	font-family: $font-header !important;
+	letter-spacing:0.1em !important;
+	font-size:14px;
+	width: 100%;
+	float:left;
+	height: 18vh;
+	color: $color-main;
+	background: none;
+	border-bottom: $color-main 2px solid;
+	resize:vertical;
+    overflow:auto;
+    margin-top: 28px;
+	@media #{$screen-tablet}{
+		height: 14vh;
+		font-size:12px;
+		margin-top: 21px;
+	}
+	@media #{$screen-phone}{
+		height: 14vh;
+		font-size:12px;
+		margin-top: 21px;
+	}
+}
+
+#contact-content{
+	margin-top: 50px;
+	position:relative;
+	@media #{$screen-tablet}{
+		margin-top: 30px;
+	}
+	@media #{$screen-phone}{
+		margin-top: 30px;
+	}
+
+}
+
+#contact-textbody{
+	opacity:0;
+	//width: 498px;
+	margin-left: auto;
+	margin-right: 0;
+	text-align: right;
+	font-size: 15px;
+	letter-spacing: 0.1em;
+	font-weight: 100;
+	line-height: 2;
+	@media #{$screen-tablet}{
+		width:100%;
+		margin: auto;
+		text-align: left;
+		display: absolute;
+		font-size: 12px;
+	}
+	@media #{$screen-phone}{
+		width:100%;
+		margin: auto;
+		text-align: left;
+		display: absolute;
+		font-size: 12px;
+	}
+}
+
+#contact-info{
+	padding-top: 50px;
+	@media #{$screen-tablet}{
+		padding-top: 20px;
+	}
+	@media #{$screen-phone}{
+		padding-top: 20px;
+	}
+}
+
+#contact-icons-list{
+	opacity:0;
+	margin-top: 30px;
+	@media #{$screen-tablet}{
+		margin-top: 20px;
+	}
+	@media #{$screen-phone}{
+		margin-top: 20px;
+	}
+}
+
+
+
+#contact-icons-list ul li{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-left: 30px;
+	margin-right: 0;
+	@media #{$screen-tablet}{
+		width: 20px;
+		height: 20px;
+		background-size:cover;
+		margin-left: 0;
+		margin-right: 20px;
+	}
+	@media #{$screen-phone}{
+		width: 20px;
+		height: 20px;
+		background-size:cover;
+		margin-left: 0;
+		margin-right: 20px;
+	}
+
+}
+
+#vimeo-icon{
+	background:url(../images/contact/vimeo-icon.png) no-repeat ;
+}
+
+#behance-icon{
+	background:url(../images/contact/behance-icon.png) no-repeat ;
+}
+
+#linkin-icon{
+	background:url(../images/contact/linkin-icon.png) no-repeat ;
+}
+
+
+#contact-bottom-element{
+	margin-left:0;
+	margin-right: auto;
+	position:fixed;
+	top:auto;
+	bottom:40px;
+	@media #{$screen-tablet}{
+		bottom:20px;
+	}
+	@media #{$screen-phone}{
+		bottom:20px;
+	}
+
+}
+
+
+#contact-v-line{
+	width: 2px;
+	height: 6.1vh;
+	margin-top: 3.98vh;
+	margin-bottom: 1.85vh;
+	background: $color-main;
+	//margin-left: 0;
+	opacity: 0;
+}
+
+#contact-v-text{
+	/* Safari */
+	-webkit-transform: rotate(90deg);
+
+	/* Firefox */
+	-moz-transform: rotate(90deg);
+
+	/* IE */
+	-ms-transform: rotate(90deg);
+
+	/* Opera */
+	-o-transform: rotate(90deg);
+
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	display:inline-block;
+	font-family:$chinese-font !important; 
+	font-size:12px;
+	line-height: 2.6;
+	letter-spacing:0.2em;
+	opacity:0.8;
+	padding-top: 40px;
+
+}
+
+#contact-h-text{
+	width:90px;
+	height:20px;
+	font-family:$chinese-font !important; 
+	font-size:12px;
+	line-height: 2.6;
+	letter-spacing:0.2em;
+	opacity:0.8;
+	margin-left:17px;
+
+}
+

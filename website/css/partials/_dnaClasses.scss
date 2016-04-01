@@ -1,0 +1,225 @@
+#dna-casestudy .casestudy-content {
+	text-align:center;
+}
+
+#dna-casestudy .scroll-line{
+	background: #ff7b31;
+}
+
+#dna-casestudy .scroll-text{
+	color: #ff7b31;
+}
+
+.dna-line{
+	height: 1px;
+	width: 69px;
+	background: #ff7b31;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 66px;
+	margin-bottom: 66px;
+
+}
+
+.dna-case-icon{
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	margin-bottom: 40px;
+	padding: 0;
+	background:url(../images/dna-icon.png) no-repeat center center;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+}
+
+.dna-textbody{
+	color:$color-main;
+	font-size: 15px;
+	text-align: justify;
+	letter-spacing: 0.1em;
+	width:600px;
+	font-weight: 100;
+	font-family: $font-family !important;
+	margin-left:auto;
+	margin-right: auto;
+	line-height: 2;
+	@media #{$screen-tablet}{
+		width:70%;
+	}
+	@media #{$screen-phone}{
+		width:80%;
+	}
+}
+
+#dna-quote{
+	width: 32.1875vw;
+	height: 11.719vw;
+	margin-top: 20px;
+	margin-bottom: 6.25vw;
+	margin-left: auto;
+	margin-right: auto;
+	background:url(../images/casestudy/dna/dna-quote.png) no-repeat center center;
+	background-size: cover;
+}
+
+#dna-and-icon{
+	width:25px;
+	height: 25px;
+	background:url(../images/casestudy/dna/and-icon.png) no-repeat center center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+ #dna-casestudy img{
+	width: 100%;
+	vertical-align: top;
+	margin-bottom: 40px;
+
+ }
+
+ #dna-casestudy video{
+	width: 100%;
+	// margin-top: 40px;
+	// margin-bottom: 40px;
+ }
+
+#vr-icon{
+	width: 90px;
+	height: 55px;
+	background:url(../images/casestudy/dna/vr-icon.png) no-repeat center center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+#dna-comps{
+	margin-top: 40px;
+}
+
+#vr-video{
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+
+
+
+$default-size: 2000;
+$crater-color: #585e5e;
+
+// n is number of stars required, size is the height/width in which these will be generated
+@function multiple-box-shadow($n, $size, $color1, $color2) {
+  $value: "#{random(1000)}px #{random($size)}px #{$color1}";
+  @for $i from 2 through $n {
+    @if $i % 2 == 0 {
+      $value: "#{$value} , #{random($size)}px #{random($size)}px  #{$color1}";
+    }
+    @else {
+      $value: "#{$value} , #{random($size)}px #{random($size)}px  #{$color2}";
+    }
+  }
+  @return unquote($value);
+}
+
+$shadows-small: multiple-box-shadow(600, $default-size, #585e5e, #5c5454);
+$shadows-medium: multiple-box-shadow(100, $default-size, #585e5e, #5c5454);
+$shadows-big: multiple-box-shadow(80, $default-size, #585e5e, #5c5454);
+$shadows-medium2: multiple-box-shadow(120, $default-size, #585e5e, #5c5454);
+
+#stars {
+	position:fixed;
+	z-index: -100 !important;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $shadows-small;
+  animation: animStar 90s linear infinite;
+  &:after {
+    content: " ";
+    position: absolute;
+    top: $default-size + px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
+  }
+}
+
+#stars2 {
+	position:fixed;
+	z-index: -100  !important;
+	opacity: 0.8;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: $shadows-medium;
+  animation: animStar 110s linear infinite;
+  &:after {
+    content: " ";
+    position: absolute;
+    top: $default-size + px;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+  }
+}
+
+#stars3 {
+	position:fixed;
+	z-index: -100  !important;
+	opacity: 0.5;
+	-webkit-filter:blur(1px); /* Old WebKit */
+  	filter:blur(1px);
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: $shadows-big;
+  animation: animStar 150s linear infinite;
+  &:after {
+    content: " ";
+    position: absolute;
+    top: $default-size + px;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: $shadows-big;
+  }
+}
+
+#stars4 {
+	position:fixed;
+	z-index: -100 !important;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $shadows-medium2;
+	-webkit-filter:blur(1px); /* Old WebKit */
+  	filter:blur(1px);
+  animation: animStar 70s linear infinite;
+  &:after {
+    content: " ";
+    position: absolute;
+    top: $default-size + px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-medium2;
+  }
+}
+
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-$default-size + px);
+  }
+}

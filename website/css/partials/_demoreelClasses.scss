@@ -1,0 +1,151 @@
+#reel-video{
+
+}
+
+#demoreel-title{
+	font-size:28px;
+	color:$color-black;
+	letter-spacing:0.06em;
+	margin-bottom: 15px;
+}
+
+
+#demoreel-casestudy p{
+	color:$color-black;
+	//font-size: 15px;
+	text-align: left;
+	letter-spacing: 0.1em;
+	font-weight: 400;
+	font-family: $font-family !important;
+	line-height: 1.6;
+	padding-top: 15px;
+	margin-bottom: 15px;
+}
+
+#demoreel-casestudy span{
+	display: inline-block;
+	color:$color-main;
+	background: $color-black;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	padding: 2px 8px;
+	//margin-left: -10px;
+}
+
+#reel-projects-list ul li{
+	display: inline-block;
+	//padding-right: 50px;
+	//width:20%;
+	margin-top: 12px;
+}
+
+#reel-projects-list ul{
+	margin-top: 15px;
+	margin-bottom: 40px;
+	text-align: justify;
+	text-align-last: justify;
+}
+
+#demoreel-casestudy h2{
+	color:$color-black;
+	margin-top: 15px;
+	letter-spacing: 0.04em;
+}
+
+#reel-breakdown-th {
+	position: relative;
+	margin-top: 15px;
+}
+
+#reel-breakdown-th p{
+	display: table-cell;
+	vertical-align: middle;
+	z-index:-100;
+	text-align:center;
+	width:100%;
+}
+
+
+#reel-breakdown-th img{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	cursor:pointer;
+	transition: 0.2s ease-in-out;
+	vertical-align: top;
+	&:hover{
+		opacity: 0;
+	}
+}
+
+.reel-project{
+	// background-size:cover;
+	// -webkit-background-size:cover;
+	// -moz-background-size:cover;
+	// -ms-background-size:cover;
+	// -o-background-size:cover;
+	position: relative;
+}
+
+.reel-project-title{
+	position: absolute;
+	z-index:-1;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    font-size: 12px;
+}
+
+
+#reel-text-animation{
+	margin-top: 150px;
+	padding-bottom: 120px;
+}
+
+.animation-gif-box{
+	border: 1px $color-black solid;
+	padding: 10px 0;
+	margin-top: 70px;
+}
+
+#title-animation{
+	width:50%;
+	margin: auto;
+}
+
+#name-animation{
+	width:60%;
+	margin: auto;
+}
+
+.animation-gif-box img{
+	width: 100%;
+}
+
+#reel-download{
+	padding-bottom: 200px;
+}
+
+#reel-button-set{
+	//margin-top: 30px;
+}
+
+.reel-download-button{
+	margin-top: 30px;
+	border: $color-black 2px solid;
+	padding:10px 30px;
+	display: inline-block;
+	margin-right: 30px;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+	&:hover{
+		background: $color-black;
+		color: $color-main;
+	}
+}

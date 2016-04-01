@@ -1,0 +1,92 @@
+#gallery p{
+	color:$color-main;
+	//font-size: 15px;
+	text-align: left;
+	letter-spacing: 0.1em;
+	font-weight: 400;
+	font-family: $font-family !important;
+	line-height: 1.6;
+	padding-top: 15px;
+	margin-bottom: 15px;
+}
+
+#gallery .row{
+	border-top: $color-main 1px solid;
+	padding-top: 20px;
+}
+
+
+#gallery span{
+	display: inline-block;
+	color:$color-main;
+	background: $color-black;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	padding: 2px 8px;
+	//margin-left: -10px;
+}
+
+#gallery h2{
+	font-size: 14px;
+	color:$color-main;
+	margin-top: 120px;
+	letter-spacing: 0.04em;
+	font-weight:400px;
+	margin-bottom: 20px;
+}
+
+#gallery .row img{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	cursor:pointer;
+	transition: 0.2s ease-in-out;
+	vertical-align: top;
+}
+
+.hover-effect img{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	cursor:pointer;
+	transition: 0.2s ease-in-out;
+	vertical-align: top;
+    -webkit-filter: grayscale(0); /* Old WebKit */
+  	filter: grayscale(0);
+	&:hover{
+	    -webkit-filter: grayscale(0); /* Old WebKit */
+	  	filter: grayscale(0);
+	}
+}
+
+.gallery-project{
+	position: relative;
+}
+
+#haagen-dazs .gallery-project{
+	border-top: $color-main 1px solid;
+	margin-top: -21px;
+}
+
+#photography .gallery-project{
+	//padding: 10px;
+}
+
+.gallery-link-button p{
+	margin-top: -60px;
+	border: $color-main 2px solid;
+	color: $color-main;
+	padding:5px 20px 12px 20px;
+	font-size:12px;
+	display: inline-block;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+	margin-bottom: 20px;
+	&:hover{
+		background: $color-main;
+		color: $color-black !important;
+	}
+	@media #{$screen-phone}{
+	margin-top: 10px;
+	}
+}

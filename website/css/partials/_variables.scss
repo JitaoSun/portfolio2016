@@ -1,0 +1,76 @@
+
+// $color-main:#f8f8f8;
+$color-main:rgb(168,168,168);
+$color-sub:#cecece;
+$color-black:rgb(19,19,19);
+
+$size-sm: 5px;
+$size-md: $size-sm * 2;
+$size-lg: $size-md * 2;
+
+$site-width:1818px;
+
+$font-family:'Lato', sans-serif;
+
+$font-header: 'avenir next',serif;
+
+$nav-font-size: 12px;
+
+$header-font-size: 5.1vw;
+
+$sub-header-font-size: 1.46vw;
+
+
+$case-title-size: 68px;
+
+$case-sub-title-size: 28px;
+
+$font-quote: 'Calluna-Italic', serif;
+
+$chinese-font: Georgia, "Times New Roman", "FangSong", "仿宋", STFangSong, "华文仿宋", serif;
+
+// Sass List
+$cool-colors:(
+	"blue",
+	"grey",
+	#fff
+	);
+
+
+$screen-phone:"screen and (min-width:0) and (max-width:640px)";
+$screen-tablet:"screen and (min-width:641px) and (max-width:1024px)";
+$screen-desktop:"screen and (min-widht:1025px)";
+
+// Sass Map
+$container-width:(
+	xs:0,
+	sm:480px,
+	md:640px,
+	lg:1024px,
+	xl:1280px
+	);
+
+$gutter-width:$size-md;
+
+$column-length:12;
+
+
+
+$boxes-map:(
+	p:padding,
+	m:margin 
+	);
+$positions-map:(
+	t:top,
+	r:right,
+	b:bottom,
+	l:left
+	);
+
+// h = horizontal, v = vertical, '' = all sides
+$sizes-map:(
+	l:$size-lg,
+	m:$size-md,
+	s:$size-sm,
+	n:0,
+	); 

@@ -1,0 +1,107 @@
+#snap-first{
+	background: #229fdb; /* For browsers that do not support gradients */
+ 	background: -webkit-linear-gradient(left bottom, #0985ea, #3cb7cb); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(top right, #0985ea, #3cb7cb); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(top right, #0985ea, #3cb7cb); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to top right, #0985ea, #3cb7cb); /* Standard syntax */
+	padding: 40px 0;
+ }
+
+ #snap-casestudy img{
+	width: 100%;
+	vertical-align: top;
+ }
+
+ #snap-casestudy video{
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+ }
+
+ #snap-casestudy h2{
+ 	margin-top: 60px;
+ 	margin-bottom: 40px;
+ }
+
+.snap-wrap{
+	position: relative;
+}
+
+.snap-brif{
+	color:$color-main;
+	//font-size: 15px;
+	text-align: left;
+	letter-spacing: 0.1em;
+	font-weight: 400;
+	font-family: $font-family !important;
+	line-height: 1.6;
+	padding-top: 15px;
+	margin-bottom: 15px;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	@media #{$screen-tablet}{
+		width: 80%
+	}
+	@media #{$screen-phone}{
+		width: 100%	}
+}
+
+#snap-third{
+	background: #dd2459; /* For browsers that do not support gradients */
+ 	background: -webkit-linear-gradient(left bottom, #c53479, #f5173d); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(top right, #c53479, #f5173d); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(top right, #c53479, #f5173d); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to top right, #c53479, #f5173d); /* Standard syntax */
+	// padding: 40px 0;
+ }
+
+ #snap-fourth, #snap-end{
+ 	background:black;
+ 	padding-top: 60px;
+ 	padding-bottom: 60px;
+ }
+
+#snap-color{
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+#snap-sixth{
+	background: #24d8c3; /* For browsers that do not support gradients */
+ 	background: -webkit-linear-gradient(left bottom, #602ecd, #a50fff); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(top right, #602ecd, #a50fff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(top right, #602ecd, #a50fff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to top right, #602ecd, #a50fff); /* Standard syntax */
+	// padding: 40px 0;
+ }
+
+#snap-eighth{
+	background: #24dbc3; /* For browsers that do not support gradients */
+ 	background: -webkit-linear-gradient(left bottom, #34c396, #16f3f0); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(top right, #34c396, #16f3f0); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(top right, #34c396, #16f3f0); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to top right, #34c396, #16f3f0); /* Standard syntax */
+	// padding: 40px 0;
+ }
+
+
+#snap-design1-animation1{
+	position: absolute;
+	width:31%;
+	top:5.785%;
+	right: 2.79%;
+	border: 1px #fff solid;
+}
+
+#snap-design1-animation2{
+	position: absolute;
+	width:31%;
+	top:65.15%;
+	right:2.79%;
+	border: 1px #fff solid;
+}
+

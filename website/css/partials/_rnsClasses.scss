@@ -1,0 +1,33 @@
+ #rns-casestudy img{
+	width: 100%;
+	vertical-align: top;
+ }
+
+ #rns-casestudy video{
+	width: 100%;
+	// margin-top: 40px;
+	// margin-bottom: 40px;
+ }
+
+ #rns-casestudy h2{
+	font-size: 20px;
+	color:$color-main;
+	//margin-top: 120px;
+	margin-top: 60px;
+	letter-spacing: 0.04em;
+	font-weight:400px;
+	margin-bottom: 20px;
+}
+
+#rns-casestudy p{
+	color:$color-main;
+	//font-size: 15px;
+	text-align: left;
+	letter-spacing: 0.1em;
+	font-weight: 400;
+	font-family: $font-family !important;
+	line-height: 1.6;
+	padding-top: 15px;
+	margin-bottom: 15px;
+}
+
