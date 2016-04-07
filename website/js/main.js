@@ -1,3 +1,22 @@
+/*
+
+
+╋╋┏┳━━┳━━━━┳━━━┳━━━┓┏━━━┳┓╋┏┳━┓╋┏┓┏━━━┳━━━┓┏┓┏━━━┓
+╋╋┃┣┫┣┫┏┓┏┓┃┏━┓┃┏━┓┃┃┏━┓┃┃╋┃┃┃┗┓┃┃┃┏━┓┃┏━┓┣┛┃┃┏━━┛
+╋╋┃┃┃┃┗┛┃┃┗┫┃╋┃┃┃╋┃┃┃┗━━┫┃╋┃┃┏┓┗┛┃┗┛┏┛┃┃┃┃┣┓┃┃┗━━┓
+┏┓┃┃┃┃╋╋┃┃╋┃┗━┛┃┃╋┃┃┗━━┓┃┃╋┃┃┃┗┓┃┃┏━┛┏┫┃┃┃┃┃┃┃┏━┓┃
+┃┗┛┣┫┣┓╋┃┃╋┃┏━┓┃┗━┛┃┃┗━┛┃┗━┛┃┃╋┃┃┃┃┃┗━┫┗━┛┣┛┗┫┗━┛┃
+┗━━┻━━┛╋┗┛╋┗┛╋┗┻━━━┛┗━━━┻━━━┻┛╋┗━┛┗━━━┻━━━┻━━┻━━━┛
+
+
+www.jitaosundesign.com 
+
+Last edited Apr 6 
+
+*/
+
+
+
 $(document).ready(function(){   
 
 
@@ -27,8 +46,7 @@ $(document).ready(function(){
 		$(".dividing-line").delay(600).animate({width:"50px"}, 400);
 		$('.inner-block h2').delay(800).animate({opacity:1}, 400);
 		$('.project-icon').delay(0).animate({opacity:1, marginTop:0}, 200);
-
-					
+		
 	/////////////////////////////////
 	//                             //
 	//           main nav          //
@@ -157,15 +175,24 @@ $(document).ready(function(){
 
 		/* open ABOUT page */
 		$("#about").click(function(){
-			// sets the source to nothing, stopping the video
-			$casestudyFrame.attr('src',''); 
-			// sets it back to the correct link so that it reloads immediately on the next window open
-			$casestudyFrame.attr('src', casestudyVidsrc);
+				// sets the source to nothing, stopping the video
+				$casestudyFrame0.attr('src','');
+				$casestudyFrame1.attr('src',''); 
+				$casestudyFrame2.attr('src',''); 
+				$casestudyFrame3.attr('src',''); 
+				$casestudyFrame4.attr('src',''); 
+				// sets it back to the correct link so that it reloads immediately on the next window open
+				$casestudyFrame0.attr('src', casestudyVidsrc0);
+				$casestudyFrame1.attr('src', casestudyVidsrc1);
+				$casestudyFrame2.attr('src', casestudyVidsrc2);
+				$casestudyFrame3.attr('src', casestudyVidsrc3);
+				$casestudyFrame4.attr('src', casestudyVidsrc4);
+
 			$("#contact-page").stop(true, true).delay(200).animate({opacity:0}, 1000, function(){
 					$("#contact-page").css({display:"none"});
 					$('#contact-textbody, #contact-mail-send, #contact-mail-meassage, #contact-icons-list, #contact-mail-email, #contact-mail-name, #contact-mail-textbody, #contact-sub-title-zh, #contact-title, #contact-v-line').css({opacity:0});
 				});
-			$("#about .top-nav-line").stop(true, true).animate({height:"600px", opacity:1}, 200 ).delay(0).animate({height:"75px"}, 200 );
+			$("#about .top-nav-line").stop(true, true).animate({height:"150px", opacity:1}, 200 ).delay(0).animate({height:"75px"}, 200 );
 			$("#about-page").stop(true, true).css({display:"block"}).delay(200).animate({opacity:1}, 1000 );
 			$("#about-v-line").delay(200).animate({opacity:1}, 1000 );
 			$("#about-textbody").delay(400).animate({opacity:1}, 1000 );
@@ -206,15 +233,24 @@ $(document).ready(function(){
 
 		/* open CONTACT page */
 		$("#contact").click(function(){
-			// sets the source to nothing, stopping the video
-			$casestudyFrame.attr('src',''); 
-			// sets it back to the correct link so that it reloads immediately on the next window open
-			$casestudyFrame.attr('src', casestudyVidsrc);
+				// sets the source to nothing, stopping the video
+				$casestudyFrame0.attr('src','');
+				$casestudyFrame1.attr('src',''); 
+				$casestudyFrame2.attr('src',''); 
+				$casestudyFrame3.attr('src',''); 
+				$casestudyFrame4.attr('src',''); 
+				// sets it back to the correct link so that it reloads immediately on the next window open
+				$casestudyFrame0.attr('src', casestudyVidsrc0);
+				$casestudyFrame1.attr('src', casestudyVidsrc1);
+				$casestudyFrame2.attr('src', casestudyVidsrc2);
+				$casestudyFrame3.attr('src', casestudyVidsrc3);
+				$casestudyFrame4.attr('src', casestudyVidsrc4);
+			
 			$("#about-page").stop(true, true).delay(200).animate({opacity:0}, 1000, function(){
 					$("#about-page").css({display:"none"});
 					$('#about-textbody, #about-name-title, #about-image, #about-sub-title-zh, #about-title, #about-v-line').css({opacity:0});
 				});
-			$("#contact .top-nav-line").stop(true, true).animate({height:"600px", opacity:1}, 200 ).delay(0).animate({height:"75px"}, 200 );
+			$("#contact .top-nav-line").stop(true, true).animate({height:"150px", opacity:1}, 200 ).delay(0).animate({height:"75px"}, 200 );
 			$("#contact-page").stop(true, true).css({display:"block"}).delay(200).animate({opacity:1}, 1000 );
 			$("#contact-v-line").delay(200).animate({opacity:1}, 1000 );
 			$("#contact-mail-send").delay(200).animate({opacity:1}, 1000 );
@@ -248,17 +284,6 @@ $(document).ready(function(){
 			headerNavLine = 0
 			console.log(headerNavLine);
 		});
-
-
-		// var buttonTop = $('#contact-mail-meassage textarea').height() + 40;
-		// console.log(buttonTop);
-
-		// $("contact-mail-meassage textarea").resizable({
-		// 	resize: function(){
-		// 		$("#contact-mail-send").css({marginTop:buttonTop});
-		// 		console.log(buttonTop);
-		// 	}
-		// });
 
 	/////////////////////////////////
 	//                             //
@@ -316,6 +341,7 @@ $(document).ready(function(){
 				console.log(sideBarWidth);
 			});
 
+
 		/* turn on the side nav */
 		$("#nav-graphic")
 			.mouseenter(function(){
@@ -362,9 +388,26 @@ $(document).ready(function(){
 	//                             //
 	/////////////////////////////////
 
-				var $casestudyFrame = $('iframe.casestudy-video');
-				// saves the current iframe source
-				var casestudyVidsrc = $casestudyFrame.attr('src');
+		var $casestudyFrame0 = $('iframe#casestudy-video0');
+		// saves the current iframe source
+		var casestudyVidsrc0 = $casestudyFrame0.attr('src');
+
+		var $casestudyFrame1 = $('iframe#casestudy-video1');
+		// saves the current iframe source
+		var casestudyVidsrc1 = $casestudyFrame1.attr('src');
+
+		var $casestudyFrame2 = $('iframe#casestudy-video2');
+		// saves the current iframe source
+		var casestudyVidsrc2 = $casestudyFrame2.attr('src');
+
+		var $casestudyFrame3 = $('iframe#casestudy-video3');
+		// saves the current iframe source
+		var casestudyVidsrc3 = $casestudyFrame3.attr('src');
+
+		var $casestudyFrame4 = $('iframe#casestudy-video4');
+		// saves the current iframe source
+		var casestudyVidsrc4 = $casestudyFrame4.attr('src');
+
 
 		var casestudyActive = 0
 		console.log(casestudyActive);
@@ -390,9 +433,17 @@ $(document).ready(function(){
 
 			$(".casestudy").stop(true, true).animate({left:"100%", opacity:0}, 200 , function(){
 				// sets the source to nothing, stopping the video
-				$casestudyFrame.attr('src',''); 
+				$casestudyFrame0.attr('src','');
+				$casestudyFrame1.attr('src',''); 
+				$casestudyFrame2.attr('src',''); 
+				$casestudyFrame3.attr('src',''); 
+				$casestudyFrame4.attr('src',''); 
 				// sets it back to the correct link so that it reloads immediately on the next window open
-				$casestudyFrame.attr('src', casestudyVidsrc);
+				$casestudyFrame0.attr('src', casestudyVidsrc0);
+				$casestudyFrame1.attr('src', casestudyVidsrc1);
+				$casestudyFrame2.attr('src', casestudyVidsrc2);
+				$casestudyFrame3.attr('src', casestudyVidsrc3);
+				$casestudyFrame4.attr('src', casestudyVidsrc4);
 			});
 			$('.close-casestudy').stop(true, true).animate({opacity:0}, 100 );
 			$.fn.fullpage.setAllowScrolling(true);
@@ -407,11 +458,11 @@ $(document).ready(function(){
 	//                             //
 	/////////////////////////////////
 
-				var $frame = $('iframe#home-reel-video-frame');
-				// saves the current iframe source
-				var vidsrc = $frame.attr('src');
-				
-				$frame.attr('src',''); 
+		var $frame = $('iframe#home-reel-video-frame');
+		// saves the current iframe source
+		var vidsrc = $frame.attr('src');
+		
+		$frame.attr('src',''); 
 
 		$("#demoreel-icon, #section0 h1, #section0 h2").click(function(){
 			$("#home-reel, #close-home-reel").css({display:"block"}).animate({opacity:100}, 800 );
@@ -440,17 +491,11 @@ $(document).ready(function(){
 		    }
 		});
 
-
-
 	/////////////////////////////////
 	//                             //
 	//           gallery           //
 	//                             //
 	/////////////////////////////////
-
-		// $().click(function(){
-		// 	$(this)
-		// });
 
 	/////////////////////////////////
 	//                             //
